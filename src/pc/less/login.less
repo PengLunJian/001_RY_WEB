@@ -1,0 +1,52 @@
+@import "variable";
+
+#main {
+  #header {
+    .nav-bar {
+      .nav-menu {
+        .nav-item {
+          &:hover {
+            border-color: @theme !important;
+            background-color: @theme;
+            a {
+              color: @white;
+            }
+          }
+        }
+      }
+    }
+  }
+  #body {
+    .login {
+      width: 400px;
+      margin: 200px auto;
+      .form-group {
+        margin-bottom: 30px;
+        .form-title {
+          text-align: center;
+          font-weight: bold;
+          font-size: @fontSize32;
+        }
+        .form-label {
+          display: block;
+        }
+        .form-control {
+          width: 100%;
+          height: 40px;
+          padding: 0 15px;
+          border-radius: @borderRadius05;
+        }
+        .btn-confirm {
+          width: 100%;
+          height: 45px;
+          background-color: @theme;
+          font-size: @fontSize18;
+          color: @white;
+        }
+      }
+    }
+  }
+  #footer {
+
+  }
+}
