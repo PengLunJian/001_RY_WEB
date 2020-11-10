@@ -18,6 +18,7 @@ body {
 
 a {
   display: block;
+  cursor: pointer;
   color: @fontColor1;
 }
 
@@ -45,7 +46,7 @@ select, textarea {
     z-index: 1000;
     background-color: @white;
     .nav-bar {
-      width: 1200px;
+      max-width: 1200px;
       margin: 0 auto;
       .pull-left {
         padding: 12px 0;
@@ -88,8 +89,6 @@ select, textarea {
             text-align: center;
             font-size: 16px;
             a {
-              display: block;
-              cursor: pointer;
               transition: all 300ms ease-out;
             }
           }
@@ -113,6 +112,7 @@ select, textarea {
     .partner {
       text-align: center;
       .title {
+        margin-top: 100px;
         font-weight: bold;
         font-size: 20px;
       }
@@ -126,7 +126,7 @@ select, textarea {
     }
     .company {
       padding: 10px;
-      margin-top: 80px;
+      margin-top: 200px;
       line-height: 25px;
       background-color: #666666;
       font-size: @fontSize13;

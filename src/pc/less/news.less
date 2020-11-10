@@ -1,0 +1,182 @@
+@import "variable";
+
+#main {
+  #header {
+    background-color: @theme;
+    .nav-bar {
+      .nav-logo {
+        color: @white !important;
+      }
+      .nav-menu {
+        .nav-item {
+          a {
+            color: @white !important;
+          }
+          &.active {
+            border-color: @white !important;
+            background-color: @white;
+            a {
+              color: @theme !important;
+            }
+          }
+          &:hover {
+            border-color: @white !important;
+            background-color: @white;
+            a {
+              color: @theme !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  #body {
+    .module {
+      margin: 0 auto;
+      max-width: 1200px;
+      .module-content {
+        .module-header {
+        }
+        .module-body {
+          .module-news {
+            min-height: 600px;
+            margin-top: 200px;
+            .module-row {
+              .module-col {
+                &.col-sm-4 {
+                  padding-left: 100px;
+                }
+                .module-item {
+                  display: flex;
+                  padding: 30px 0;
+                  border-bottom: 1px solid @borderColor1;
+                  .module-time {
+                    min-width: 20%;
+                    font-size: @fontSize13;
+                    color: @fontColor3;
+                    span {
+                      display: inline-block;
+                      padding: 0 30px;
+                      line-height: 30px;
+                      border: 1px solid @borderColor3;
+                    }
+                  }
+                  .module-text {
+                    .module-name {
+                      font-size: @fontSize18;
+                    }
+                    .module-desc {
+                      margin: 20px 0;
+                      color: @fontColor3;
+                    }
+                  }
+                }
+                .module-group {
+                  margin-bottom: 65px;
+                  .form-group {
+                    width: 260px;
+                    position: relative;
+                    border: 2px solid @theme;
+                    border-radius: 44px;
+                    overflow: hidden;
+                    .form-label {
+                      position: absolute;
+                      right: 0;
+                    }
+                    .form-input {
+                      border: none;
+                      height: 40px;
+                      padding: 0 20px;
+                    }
+                  }
+                  .group-title {
+                    font-size: @fontSize18;
+                    color: @fontColor2;
+                  }
+                  .group-block {
+                    display: flex;
+                    margin-top: 20px;
+                    font-size: @fontSize14;
+                    color: @fontColor2;
+                    .group-label {
+                      width: 15%;
+                    }
+                    .group-value {
+                      width: 85%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .module-footer {
+        }
+      }
+    }
+  }
+  #footer {
+
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #main {
+    #body {
+      .section1 {
+        .context {
+          .column {
+            width: 580px;
+            margin-top: 200px;
+            margin-left: 48%;
+            text-align: left;
+            .title {
+              margin-bottom: 60px;
+              font-size: @fontSize32;
+            }
+            .description {
+              line-height: 40px;
+              font-size: @fontSize20;
+              letter-spacing: 0.5px;
+            }
+            .btn-href {
+              display: block;
+              line-height: 56px;
+              border-radius: 60px;
+              margin-bottom: 30px;
+              border: 2px solid @white;
+              background-color: transparent;
+              font-size: @fontSize20;
+              color: @white;
+            }
+            &:nth-child(2) {
+              padding-left: 360px;
+            }
+          }
+        }
+      }
+      .section3 {
+        .module-content {
+          .module-header {
+            .module-title {
+              padding-top: 200px;
+              .module-large {
+                font-size: @fontSize30;
+              }
+              .module-small {
+                margin-top: 30px;
+              }
+            }
+          }
+          .module-body {
+            .module-row {
+              margin: 120px auto 0;
+            }
+          }
+          .module-footer {
+          }
+        }
+      }
+    }
+  }
+}
